@@ -1,0 +1,26 @@
+{
+  "name": "hanbongul",
+  "version": "0.0.1",
+  "description": "Draw hangul with Japanese",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nupamore/hanbongul.git"
+  },
+  "keywords": [
+    "hangul",
+    "korean"
+  ],
+  "author": "nupamore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nupamore/hanbongul/issues"
+  },
+  "homepage": "https://github.com/nupamore/hanbongul#readme",
+  "dependencies": {
+    "hangul-js": "^0.2.4"
+  }
+}
