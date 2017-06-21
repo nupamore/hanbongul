@@ -7,8 +7,7 @@
   <title>hanbongul</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-  <script src="hangul.min.js"></script>
-  <script src="hanbongul.js"></script>
+  <script src="hanbongul.min.js"></script>
 
   <style>
     #wrapper {
@@ -27,14 +26,12 @@
 <body>
 
 <div id="wrapper">
-  <h1>hanbongul</h1>
+  <h1>한본글</h1>
   <textarea cols="45" rows="3" v-model="hangul"></textarea>
   <br>
   <textarea cols="45" rows="3" v-model="hanbongul"></textarea>
-
-  <pre>
-{{ JSON.stringify(dic, null, 3) }}
-  </pre>
+  <br><br>
+  <a href="https://github.com/nupamore/hanbongul/commit/2ef5dcf1007cce7abe309df7f1adfea381510649">2017/6/21 받침구현</a>
 </div>
 
 </body>
@@ -43,7 +40,7 @@
   new Vue({
     el: '#wrapper',
     data: {
-      hangul: '바나나가 마시다니',
+      hangul: '어둠에 삼켜져라!',
     },
     computed: {
       hanbongul() {
