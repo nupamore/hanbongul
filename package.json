@@ -1,7 +1,7 @@
 {
   "name": "hanbongul",
-  "version": "0.0.1",
-  "description": "Draw hangul with Japanese",
+  "version": "0.0.2",
+  "description": "일본어로 한글쓰기",
   "main": "dist/hanbongul.js",
   "scripts": {
     "test": "node ./src/calculate.js"
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/nupamore/hanbongul.git"
   },
   "keywords": [
+    "한글",
     "hangul",
     "korean"
   ],
