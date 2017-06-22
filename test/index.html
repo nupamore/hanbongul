@@ -7,7 +7,7 @@
   <title>hanbongul</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-  <script src="../dist/hanbongul.min.js"></script>
+  <script src="../dist/hanbongul.js"></script>
 
   <style>
     #wrapper {
@@ -18,7 +18,7 @@
       background-color: #484848;
       color: #ddd;
       font-size: 20px;
-      font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "IPA Pゴシック","IPA PGothic", sans-serif;
+      font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "IPA Pゴシック", "IPA PGothic", sans-serif;
       line-height: 1;
     }
   </style>
@@ -26,10 +26,10 @@
 <body>
 
 <div id="wrapper">
-  <h1>hanbongul</h1>
-  <textarea cols="45" rows="3" v-model="hangul"></textarea>
+  <h1>한본글</h1>
+  <textarea cols="45" rows="3" v-model="input"></textarea>
   <br>
-  <textarea cols="45" rows="3" v-model="hanbongul"></textarea>
+  <textarea cols="45" rows="3" v-model="output"></textarea>
 </div>
 
 </body>
@@ -38,11 +38,11 @@
   new Vue({
     el: '#wrapper',
     data: {
-      hangul: '어둠에 삼켜져라!',
+      input: '흐응~ 당신이 내 프로듀서?',
     },
     computed: {
-      hanbongul() {
-        return hanbongulize(this.hangul)
+      output() {
+        return hanbongulize(this.input)
       }
     }
   })

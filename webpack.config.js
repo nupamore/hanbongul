@@ -4,11 +4,14 @@ const path = require('path')
 const fs = require('fs')
 
 module.exports = {
-  devtool: 'source-map',
+  // devtool: 'source-map',
   context: __dirname,
   entry: path.resolve(__dirname, 'src/main.js'),
   output: {
-    filename: 'dist/hanbongul.min.js',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'hanbongul.js',
+    library: 'hanbongul',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
@@ -29,6 +32,7 @@ module.exports = {
     ],
   },
   plugins: [
+    /*
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
@@ -36,5 +40,6 @@ module.exports = {
       minimize: true,
       sourceMap: true,
     }),
+    */
   ],
 }

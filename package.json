@@ -2,9 +2,9 @@
   "name": "hanbongul",
   "version": "0.0.1",
   "description": "Draw hangul with Japanese",
-  "main": "index.js",
+  "main": "dist/hanbongul.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./src/calculate.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
     "babel-preset-es2015": "^6.24.1",
+    "phantom": "^4.0.4",
     "raw-loader": "^0.5.1",
     "webpack": "^3.0.0"
   }
